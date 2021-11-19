@@ -259,14 +259,15 @@ func findPrefixInTwoString(str1:String,str2: String) -> String{
     func movesZerostoEnd(numbers: [Int])  -> [Int] {
     
     
-        let arraywithZeroatEnd =  numbers.filter { number -> Bool in
-            
-            return number != 0
-            
+        let arrayWithoutZero =  numbers.filter { number -> Bool in
+            number != 0
         }
-        print(arraywithZeroatEnd)
         
-        return arraywithZeroatEnd
+        let arrayWithZerosAtEnd = numbers.filter({$0 == 0})
+        
+        print(arrayWithoutZero)
+        
+        return arrayWithoutZero + arrayWithZerosAtEnd
     }
    
 }

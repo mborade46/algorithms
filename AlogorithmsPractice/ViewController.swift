@@ -88,6 +88,8 @@ class ViewController: UIViewController {
         
         let arrayZeroAtEnd = dataStructureAL.movesZerostoEnd(numbers: [75,9,0,7,87,0,0,4,2,65,0,40,5,0])
         
+        print(arrayZeroAtEnd)
+        
     }
     
 
