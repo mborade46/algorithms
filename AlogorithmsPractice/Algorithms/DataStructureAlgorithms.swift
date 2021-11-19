@@ -256,4 +256,9 @@ func findPrefixInTwoString(str1:String,str2: String) -> String{
     
     return common
 }
+    func movesZerostoEnd(numbers: [Int])  -> [Int] {
+    
+        return numbers.sorted(by: >)
+        
+    }
 }

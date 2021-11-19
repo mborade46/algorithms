@@ -84,7 +84,13 @@ class ViewController: UIViewController {
         let kthInput = [10,12,11,2,1,5,6,4,3,2,1,5,6,4,6,6,7,9]
         let kthlargestNumber = dataStructureAL.findKthLargestelementInaarray(arrayOfInteger: kthInput, kth:2)
         print(kthlargestNumber)
+        
+        
+        let arrayZeroAtEnd = dataStructureAL.movesZerostoEnd(numbers: [75,9,0,7,87,0,0,4,2,65,0,40,5,0])
+        
     }
+    
+
 
 
 }
