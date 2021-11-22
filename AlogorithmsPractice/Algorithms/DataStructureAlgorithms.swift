@@ -304,20 +304,27 @@ func findPrefixInTwoString(str1:String,str2: String) -> String{
         return countOnesArray.sorted(by: >).first ?? 0
     }
     
-    func logestSubstringWithoutRepatatingChar(word:String) ->String  {
+    func logestSubstringWithoutRepatatingChar(word:String) ->String?  {
         
         var str = String()
+        var arrayofsubstring = [String]()
         
         for char in word {
-            if !str.contains(char) {
+            if !str.contains(char){
                  str.append(char)
             }
             else{
-                str = ""
+                arrayofsubstring.append(str)
+                str = String(char)
             }
         }
+        if str != "" {
+            arrayofsubstring.append(str)
+        }
         
-        return str
+        print(arrayofsubstring)
+        return arrayofsubstring.sorted(by: {$0.count > $1.count}).first
+            
     }
    
 }

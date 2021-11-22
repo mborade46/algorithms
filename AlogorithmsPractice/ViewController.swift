@@ -94,6 +94,8 @@ class ViewController: UIViewController {
         let numberofOnes = dataStructureAL.maxConsecativeOnes(binaryArray: [1,0,0,1,1,1,1,0,0,1,1,1,1,0,0])
         print(numberofOnes)
         
+        let str = dataStructureAL.logestSubstringWithoutRepatatingChar(word: "pwwkew")
+        
     }
     
 
