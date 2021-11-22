@@ -90,6 +90,10 @@ class ViewController: UIViewController {
         
         print(arrayZeroAtEnd)
         
+        
+        let numberofOnes = dataStructureAL.maxConsecativeOnes(binaryArray: [1,0,0,1,1,1,1,0,0,1,1,1,1,0,0])
+        print(numberofOnes)
+        
     }
     
 
