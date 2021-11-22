@@ -126,7 +126,7 @@ class DataStructureAlgorithms {
     }
     
     func smallestCommon(arrays:[[Int]]) -> Int? {
-        var smallestcommon : Int = -1
+        let smallestcommon : Int = -1
         
         var smallestarray = arrays[0]
         for i in 0...arrays.count {
@@ -302,6 +302,22 @@ func findPrefixInTwoString(str1:String,str2: String) -> String{
         
         print(countOnesArray)
         return countOnesArray.sorted(by: >).first ?? 0
+    }
+    
+    func logestSubstringWithoutRepatatingChar(word:String) ->String  {
+        
+        var str = String()
+        
+        for char in word {
+            if !str.contains(char) {
+                 str.append(char)
+            }
+            else{
+                str = ""
+            }
+        }
+        
+        return str
     }
    
 }
