@@ -257,8 +257,9 @@ func findPrefixInTwoString(str1:String,str2: String) -> String{
     return common
 }
     func movesZerostoEnd(numbers: [Int])  -> [Int] {
-    
-    
+        
+        var dict = [Int:Int]()
+        
         let arrayWithoutZero =  numbers.filter { number -> Bool in
             number != 0
         }
@@ -268,6 +269,39 @@ func findPrefixInTwoString(str1:String,str2: String) -> String{
         print(arrayWithoutZero)
         
         return arrayWithoutZero + arrayWithZerosAtEnd
+    }
+    
+    
+    func maxConsecativeOnes(binaryArray: [Int]) -> Int {
+        
+        var numberofTimesOnes = 0
+        var countOnesArray = [Int]()
+    
+        if binaryArray[0] == 1 {
+            numberofTimesOnes = 1
+        }
+        for start in 1...binaryArray.count-1 {
+          
+            
+            
+            if binaryArray[start] == 1 {
+              
+               numberofTimesOnes = numberofTimesOnes + 1
+            }
+            else if binaryArray[start-1] == 1 && binaryArray[start] == 0 {
+                
+                countOnesArray.append(numberofTimesOnes)
+                numberofTimesOnes = 0
+            }
+           
+        
+        }
+        if numberofTimesOnes != 0 {
+            countOnesArray.append(numberofTimesOnes)
+        }
+        
+        print(countOnesArray)
+        return countOnesArray.sorted(by: >).first ?? 0
     }
    
 }
