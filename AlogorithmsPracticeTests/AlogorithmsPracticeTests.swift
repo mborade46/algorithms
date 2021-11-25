@@ -9,25 +9,35 @@ import XCTest
 @testable import AlogorithmsPractice
 
 class AlogorithmsPracticeTests: XCTestCase {
+    
+    var dataStructAlgoritham : DataStructureAlgorithms?
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+    dataStructAlgoritham = DataStructureAlgorithms()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        
+        
+        
     }
+    func test_isPrimeNumber_datStructure_algorithms_retunfalse_if_number_is_zero()  {
+       
+        XCTAssertEqual( dataStructAlgoritham?.isPrimeNumber(number: 0), false)
+       
+    }
+    
+    func test_isPrimeNumber_datStructure_algorithms_retunTrue_if_number_is_5()  {
+       
+        XCTAssertEqual( dataStructAlgoritham?.isPrimeNumber(number: 5), true)
+        
+       
+    }
+//func test_balance_paranthesis_return
+    
+    
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
 
 }

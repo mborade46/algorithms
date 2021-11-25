@@ -40,10 +40,7 @@ class MerryInstituteStudent: Student {
     func updateAddress(newAddress: String)  {
         self.address = newAddress
     }
-    
-    
-    
-    
+
 }
 
 
@@ -95,6 +92,9 @@ class ViewController: UIViewController {
         print(numberofOnes)
         
         let str = dataStructureAL.logestSubstringWithoutRepatatingChar(word: "pwwkew")
+        
+
+        dataStructureAL.commonDivisorsOfNnumbers(numbers: [12,18,20,50,64])
         
     }
     
