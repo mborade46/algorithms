@@ -102,6 +102,9 @@ class ViewController: UIViewController {
         
         print("median = \(median)")
         
+        
+        dataStructureAL.reverseNumber(number: 123)
+        
     }
     
 
