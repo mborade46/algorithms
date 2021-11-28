@@ -34,6 +34,7 @@ class AlogorithmsPracticeTests: XCTestCase {
         
        
     }
+    fun test_smallest_Common
 //func test_balance_paranthesis_return
     
     
