@@ -366,6 +366,26 @@ func findPrefixInTwoString(str1:String,str2: String) -> String{
         
     }
     
+    func reverseNumber(number: Int) -> Int {
+        
+        var value = number
+        if number == 0{
+            return 0
+        }
+        var reverseNumber = 0
+        var temp = 0
+        
+        while value != 0
+        {
+            reverseNumber = value % 10
+            value = value / 10
+            temp = temp * 10 + reverseNumber
+        }
+        
+        print(temp)
+        return temp
+    }
+    
     /*
     func commonDivisorsOfNnumbers(numbers : [Int]) -> [Int] {
         var commonDivArray = [Int]()
