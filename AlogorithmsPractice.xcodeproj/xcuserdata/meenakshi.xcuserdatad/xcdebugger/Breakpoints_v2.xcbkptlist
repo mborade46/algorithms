@@ -7,17 +7,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "28356AB4-5CDB-4BCF-8458-2DA9DEA94FE3"
+            uuid = "C8614F9A-5E33-44A2-9714-1E07BEB1B0EE"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlogorithmsPractice/Algorithms/DataStructureAlgorithms.swift"
+            filePath = "AlogorithmsPractice/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "283"
-            endingLineNumber = "283"
-            landmarkName = "maxConsecativeOnes(binaryArray:)"
-            landmarkType = "7">
+            startingLineNumber = "105"
+            endingLineNumber = "105">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
