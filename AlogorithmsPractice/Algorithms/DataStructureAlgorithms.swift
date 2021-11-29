@@ -32,9 +32,6 @@ class DataStructureAlgorithms {
         
         var flag  = true
         var i = 2
-        if number == 0 {
-            return false
-        }
         while i < number {
             
             if number % i == 0{
@@ -129,7 +126,7 @@ class DataStructureAlgorithms {
     }
     
     func smallestCommon(arrays:[[Int]]) -> Int? {
-        let smallestcommon : Int = -1
+        var smallestcommon : Int = -1
         
         var smallestarray = arrays[0]
         for i in 0...arrays.count {
@@ -273,7 +270,7 @@ func findPrefixInTwoString(str1:String,str2: String) -> String{
         
         return arrayWithoutZero + arrayWithZerosAtEnd
     }
-    
+
     
     func maxConsecativeOnes(binaryArray: [Int]) -> Int {
         
@@ -307,121 +304,14 @@ func findPrefixInTwoString(str1:String,str2: String) -> String{
         return countOnesArray.sorted(by: >).first ?? 0
     }
     
-    func logestSubstringWithoutRepatatingChar(word:String) ->String?  {
+    
+     func findValidParanthesis(number : Int){
         
-        var str = String()
-        var arrayofsubstring = [String]()
         
-        for char in word {
-            if !str.contains(char){
-                 str.append(char)
-            }
-            else{
-                arrayofsubstring.append(str)
-                str = String(char)
-            }
-        }
-        if str != "" {
-            arrayofsubstring.append(str)
-        }
-        
-        print(arrayofsubstring)
-        return arrayofsubstring.sorted(by: {$0.count > $1.count}).first
-            
-    }
-    func commonDivisorsOfNnumbers(numbers: [Int]) -> [Int]{
-        var commonDivArray = [Int]()
-        let sortedarray = numbers.sorted(by: >)
-        var start = 2
-        for number in sortedarray {
-            
-            
-        }
-        
-        return commonDivArray
     }
     
     
-    func medianOfTwoArray(numbers1:[Int],numbers2:[Int]) -> Float {
-        
-     
-        
-        var mergedNumbers = numbers1 + numbers2
-        
-        mergedNumbers = mergedNumbers.sorted(by: <)
-        
-       
-        if mergedNumbers.count % 2 == 0  {
-            
-            return Float(mergedNumbers[(mergedNumbers.count/2)] + mergedNumbers[(mergedNumbers.count/2) - 1]) / 2
-          
-        }
-        else{
-          
-            return Float(mergedNumbers[(mergedNumbers.count - 1) / 2])
-            
-        }
-  
-
-        
-    }
-    
-    func reverseNumber(number: Int) -> Int {
-        
-        var value = number
-        if number == 0{
-            return 0
-        }
-        var reverseNumber = 0
-        var temp = 0
-        
-        while value != 0
-        {
-            reverseNumber = value % 10
-            value = value / 10
-            temp = temp * 10 + reverseNumber
-        }
-        
-        print(temp)
-        return temp
-    }
-    
-    /*
-    func commonDivisorsOfNnumbers(numbers : [Int]) -> [Int] {
-        var commonDivArray = [Int]()
-        var DivisorForEachNumber = [[Int]]()
-        var start = 2
-        for var number in numbers {
-    
-            while start < number/2  {
-                
-                if number % start == 0 {
-                    
-                    commonDivArray.append(start)
-                    number = number / start
-                    start = 2
-                }
-                else{
-                    start = start + 1
-                }
-                
-            }
-            if number != 1 {
-                commonDivArray.append(number)
-            }
-            DivisorForEachNumber.append(commonDivArray)
-            commonDivArray = [Int]()
-            
-        }
-        
-        print(DivisorForEachNumber)
-        
-        
-    
-        return commonDivArray
-        
-    }
-   */
+   
 }
         
 
