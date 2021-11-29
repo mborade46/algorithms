@@ -40,7 +40,10 @@ class MerryInstituteStudent: Student {
     func updateAddress(newAddress: String)  {
         self.address = newAddress
     }
-
+    
+    
+    
+    
 }
 
 
@@ -90,20 +93,6 @@ class ViewController: UIViewController {
         
         let numberofOnes = dataStructureAL.maxConsecativeOnes(binaryArray: [1,0,0,1,1,1,1,0,0,1,1,1,1,0,0])
         print(numberofOnes)
-        
-        let str = dataStructureAL.logestSubstringWithoutRepatatingChar(word: "pwwkew")
-        
-
-       let divisor = dataStructureAL.commonDivisorsOfNnumbers(numbers: [12,18,20,50,64])
-        
-        
-        
-        let median =  dataStructureAL.medianOfTwoArray(numbers1: [1,2], numbers2: [3,4])
-        
-        print("median = \(median)")
-        
-        
-        dataStructureAL.reverseNumber(number: 123)
         
     }
     
